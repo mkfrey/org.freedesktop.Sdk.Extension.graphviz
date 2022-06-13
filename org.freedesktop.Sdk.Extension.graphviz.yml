@@ -1,0 +1,30 @@
+id: org.freedesktop.Sdk.Extension.graphviz
+branch: '21.08'
+runtime: org.freedesktop.Sdk
+build-extension: true
+sdk: org.freedesktop.Sdk
+runtime-version: '21.08'
+sdk-extensions: []
+separate-locales: false
+appstream-compose: false
+build-options:
+  prefix: /usr/lib/sdk/graphviz
+cleanup:
+  - /share/info
+  - /share/man
+modules:
+  - name: graphviz
+    sources:
+      - type: archive
+        url: https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/4.0.0/graphviz-4.0.0.tar.gz
+        sha256:  0f03fe2492a7659f2918e51cbdcc2431f118f1bb90fe611985fd655c461ee775
+  - name: appdata
+    buildsystem: simple
+    build-commands:
+      - mkdir -p ${FLATPAK_DEST}/share/metainfo
+      - cp ${FLATPAK_ID}.appdata.xml ${FLATPAK_DEST}/share/metainfo
+      - appstream-compose --basename ${FLATPAK_ID} --prefix=${FLATPAK_DEST} --origin=flatpak
+        ${FLATPAK_ID}
+    sources:
+      - type: file
+        path: org.freedesktop.Sdk.Extension.graphviz.appdata.xml

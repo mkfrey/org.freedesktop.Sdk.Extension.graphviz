@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Copyright 2019 Bilal Elmoussaoui <bil.elmoussaoui@gmail.com> -->
+<component type="runtime">
+	<id>
+		org.freedesktop.Sdk.Extension.graphviz
+	</id>
+	<metadata_license>
+		CC0-1.0
+	</metadata_license>
+	<name>
+		Graphviz Sdk extension
+	</name>
+	<summary>
+		Graphviz packages and tools
+	</summary>
+	<project_license>
+		EPL-1.0
+	</project_license>
+	<url type="homepage">
+		https://graphviz.org/
+	</url>
+	<url type="bugtracker">
+		https://gitlab.com/graphviz/graphviz/-/issues
+	</url>
+	<translation/>
+  <releases>
+    <release version="4.0.0" date="2022-05-29"/>
+  </releases>
+</component>
