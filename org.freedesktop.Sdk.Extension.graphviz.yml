@@ -9,9 +9,6 @@ separate-locales: false
 appstream-compose: false
 build-options:
   prefix: /usr/lib/sdk/graphviz
-cleanup:
-  - /share/info
-  - /share/man
 modules:
   - name: graphviz
     sources:
