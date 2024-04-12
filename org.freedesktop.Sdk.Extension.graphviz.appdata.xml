@@ -24,6 +24,7 @@
 	</url>
 	<translation/>
   <releases>
+    <release version="10.0.1" date="2024-02-10"/>
     <release version="4.0.0" date="2022-05-29"/>
   </releases>
 </component>

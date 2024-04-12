@@ -13,8 +13,8 @@ modules:
   - name: graphviz
     sources:
       - type: archive
-        url: https://gitlab.com/api/v4/projects/4207231/packages/generic/graphviz-releases/7.1.0/graphviz-7.1.0.tar.xz
-        sha256: 8e1f773aa5728fad0c9d5fda3eb83ec749e64dde8e8852071154b08a64d63ca9
+        url: https://gitlab.com/graphviz/graphviz/-/archive/10.0.1/graphviz-10.0.1.tar.gz
+        sha256: 28f452ef1cb12288c8758a62f8c3fcfefdb91b251f7aae61d0d703f851bde931
   - name: appdata
     buildsystem: simple
     build-commands:
